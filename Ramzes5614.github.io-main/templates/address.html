@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for address in addresses %}
+<h4>{{address.id}}, {{address.city}}, {{address.street}}, {{address.house}}, {{address.latitude}}, {{address.longitude }} , {{address.description}}</h4>
+{% endfor %}
+</body>
+</html>

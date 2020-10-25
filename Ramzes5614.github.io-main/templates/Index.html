@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Addresses table</h2>
+{% for address in addresses %}
+<h4>{{address.id}}, {{address.city}}, {{address.street}}, {{address.house}}, {{address.latitude}}, {{address.longitude }} , {{address.description}}</h4>
+{% endfor %}
+
+<br>
+<h2>Roads table</h2>
+{% for road in roads %}
+<h4>{{road.id}}, {{road.datatime}}</h4>
+{% endfor %}
+
+<br>
+<h2>Comments table</h2>
+{% for comment in comments %}
+<h4>{{comment.comment_Id}}, {{comment.latitude}}, {{comment.longitude}}, {{comment.type}}</h4>
+{% endfor %}
+
+<br>
+<h2>Road_coords table</h2>
+{% for road_coord in road_coords %}
+<h4>{{road_coord.id}}, {{road_coord.latitude}}, {{road_coord.longitude}}</h4>
+{% endfor %}
+
+</body>
+</html>
